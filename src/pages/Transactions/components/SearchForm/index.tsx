@@ -12,7 +12,7 @@ const searchFormSchema = z.object({
 
 type SearchFormInputs = z.infer<typeof searchFormSchema>
 
-export function SaerchForm() {
+export function SearchForm() {
   const fetchTransactions = useContextSelector(
     TransactionsContext,
     (context) => {
